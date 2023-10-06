@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Jost:wght@400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  height: 100vh; /* Take up full viewport height */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  max-width: 50%;
+  border-radius: 30px;
+  box-shadow: 15px 20px 25px hsl(221, 100%, 96%);
+}
+
+.component1,
+.component2 {
+  flex: 1; /* Equal width for both components */
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.component1 {
+  background: linear-gradient(to bottom, blue, rgb(61, 8, 184));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.component1 h2 {
+  font-size: 1.125rem;
+  margin-top: 20px;
+  color: hsl(241, 100%, 89%);
+}
+
+.component1 .circle {
+  background: linear-gradient(to bottom, blue, rgb(61, 8, 184));
+  color: white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.component1 h3 {
+  font-size: 4rem;
+  line-height: 30px;
+}
+
+span {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: hsl(241, 100%, 89%);
+}
+
+.component1 h4 {
+  font-size: 1.8rem;
+  margin-bottom: 3px;
+  font-weight: 300;
+}
+
+.component1 p {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: hsl(221, 100%, 96%);
+  max-width: 75%;
+}
+
+.component2 {
+  background-color: white;
+  padding: 20px;
+}
+
+.component2 p {
+  margin: 0;
+}
+
+.component2 h2 {
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 30px;
+}
+
+.options {
+  display: flex;
+  max-width: 100%;
+  height: 12px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options div img {
+  padding-right: 10px;
+}
+
+.options .rate {
+  margin-left: 100px;
+}
+
+.bld {
+  font-weight: 700;
+}
+.reaction {
+  background: hsl(0, 100%, 67%, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.memory {
+  background: hsl(39, 100%, 56%, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.verbal {
+  background: hsl(166, 100%, 37%, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.visual {
+  background: hsl(234, 85%, 45%, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: hsl(224, 30%, 27%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 38px;
+  height: 50px;
+  border-radius: 20px;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+.button:active {
+  background: linear-gradient(to bottom, blue, rgb(61, 8, 184));
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 1rem;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    height: 100vh; /* Take up full viewport height */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the container horizontally */
+    max-width: 100%;
+    /* border-radius: 30px; */
+  }
+
+  .component1 {
+    background: linear-gradient(to bottom, blue, rgb(61, 8, 184));
+    color: white;
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .component1 h2 {
+    font-size: 1.2rem;
+    margin-top: 158px;
+    color: hsl(241, 100%, 89%);
+  }
+
+  .component1 .circle {
+    background: linear-gradient(to bottom, blue, rgb(61, 8, 184));
+    color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; */
+  }
+
+  .component1 h3 {
+    font-size: 3rem;
+    line-height: 30px;
+    margin: 0;
+  }
+  span {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: hsl(241, 100%, 89%);
+  }
+
+  .component1 h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .component1 p {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: hsl(221, 100%, 96%);
+    max-width: 75%;
+  }
+
+  .component2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    background-color: white;
+  }
+
+  .component2 p {
+    margin: 0;
+  }
+
+  .component2 h2 {
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  /* .options {
+    display: flex;
+    max-width: 100%;
+    height: 12px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+  } */
+}
